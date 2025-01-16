@@ -53,16 +53,16 @@ const Header = ({
   search,
 }: Props) => (
   <div className={cn('relative', className)}>
-    <header className="flex h-[92px] items-center justify-between gap-1 overflow-y-visible bg-white px-4 2xl:container sm:px-10 lg:gap-8 lg:px-12 2xl:mx-auto 2xl:px-0">
+    <header className="flex h-[164px] items-center justify-between gap-1 overflow-y-visible bg-eggshell px-4 2xl:container sm:px-10 lg:gap-8 lg:px-12 2xl:mx-auto 2xl:px-0">
       <CustomLink className="overflow-hidden text-ellipsis py-3" href="/">
         {typeof logo === 'object' ? (
           <Image
             alt={logo.altText}
-            className="max-h-16 object-contain"
-            height={32}
+            className="max-h-40 object-contain"
+            height={64}
             priority
             src={logo.src}
-            width={155}
+            width={156}
           />
         ) : (
           <span className="truncate text-2xl font-black">{logo}</span>

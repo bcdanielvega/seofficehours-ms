@@ -122,7 +122,7 @@ const Slideshow = ({ className, interval = 15_000, slides }: Props) => {
                   <Image
                     alt={slide.image.altText}
                     blurDataURL={slide.image.blurDataUrl}
-                    className="absolute -z-10 object-cover"
+                    className="absolute -z-10 object-contain"
                     fill
                     placeholder="blur"
                     priority={index === 0}

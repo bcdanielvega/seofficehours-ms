@@ -11,6 +11,8 @@ const config = {
         transparent: 'transparent',
         current: 'currentColor',
         black: '#000000',
+        pearl: '#F6F7F9',
+        eggshell: '#F6F3DF',
         primary: '#053FB0',
         secondary: '#3071EF',
         white: '#FFFFFF',
@@ -33,6 +35,7 @@ const config = {
       },
       fontFamily: {
         sans: ['var(--font-inter)'],
+        quando: ['var(--font-quando)']
       },
       borderColor: {
         DEFAULT: '#CFD8DC',
