@@ -137,9 +137,9 @@ const Slideshow = ({ className, interval = 15_000, slides }: Props) => {
                   )}
                 >
                   <h2 className="text-5xl font-black lg:text-6xl">{slide.title}</h2>
-                  {Boolean(slide.description) && <p className="max-w-xl">{slide.description}</p>}
+                  {Boolean(slide.description) && <div className="max-w-xl">{slide.description}</div>}
                   {slide.cta && (
-                    <Button asChild className="w-fit">
+                    <Button asChild className="w-fit mt-10">
                       <a href={slide.cta.href}>{slide.cta.label}</a>
                     </Button>
                   )}

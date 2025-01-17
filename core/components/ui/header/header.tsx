@@ -69,11 +69,11 @@ const Header = ({
         )}
       </CustomLink>
 
-      <NavigationMenuPrimitive.Root className="hidden lg:block">
-        <NavigationMenuPrimitive.List className="flex items-center gap-2 lg:gap-4">
+      <NavigationMenuPrimitive.Root className="hidden lg:block bg-eggshell">
+        <NavigationMenuPrimitive.List className="flex items-center gap-2 lg:gap-4 bg-eggshell">
           {links.map((link) =>
             link.groups && link.groups.length > 0 ? (
-              <NavigationMenuPrimitive.Item key={link.href}>
+              <NavigationMenuPrimitive.Item key={link.href} className='bg-eggshell'>
                 <NavigationMenuPrimitive.Trigger className="group/button flex items-center font-semibold hover:text-primary focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/20">
                   <CustomLink className="p-3 font-semibold" href={link.href}>
                     {link.label}
@@ -83,7 +83,7 @@ const Header = ({
                     className="cursor-pointer transition duration-200 group-data-[state=open]/button:-rotate-180"
                   />
                 </NavigationMenuPrimitive.Trigger>
-                <NavigationMenuPrimitive.Content className="flex gap-20 2xl:container data-[motion^=from-]:animate-in data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 sm:px-10 lg:px-12 2xl:mx-auto 2xl:px-0">
+                <NavigationMenuPrimitive.Content className="flex gap-20 2xl:container data-[motion^=from-]:animate-in data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 sm:px-10 lg:px-12 2xl:mx-auto 2xl:px-0 bg-eggshell">
                   {link.groups.map((group) => (
                     <ul className="flex flex-col" key={group.href}>
                       <li>
@@ -120,7 +120,7 @@ const Header = ({
           )}
         </NavigationMenuPrimitive.List>
 
-        <NavigationMenuPrimitive.Viewport className="absolute start-0 top-full z-50 w-full bg-white pb-12 pt-6 shadow-xl duration-200 animate-in slide-in-from-top-5" />
+        <NavigationMenuPrimitive.Viewport className="absolute start-0 top-full z-50 w-full bg-eggshell pb-12 pt-6 shadow-xl duration-200 animate-in slide-in-from-top-5" />
       </NavigationMenuPrimitive.Root>
 
       <div className="flex items-center gap-2 lg:gap-4">
